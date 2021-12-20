@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../../../assets/fonts/UniversKPMG/UniversKPMG.scss";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+
+
+body {
+
+}
+
+
+
+p {
+	@apply mb-2;
+}
+
+
+
+a {
+	@apply border-b border-dashed border-gray-400 hover:border-gray-600 transition-all duration-300;
+}
+
+
+
+pre {
+	font-family : 'Fira Code', monospace !important;
+}
+
+
+
+.inline-mono {
+	position  : relative;
+	display   : inline;
+	font-size : 10px;
+	@apply h-full bg-gray-300 px-1 leading-none text-gray-900;
+}

@@ -1,0 +1,48 @@
+{
+  "name": "digital-delta-technical-cbr",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --port 4200 & ngtw watch",
+    "build": "ngtw build && ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "prestart": "ngtw build"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~12.2.14",
+    "@angular/common": "~12.2.14",
+    "@angular/compiler": "~12.2.14",
+    "@angular/core": "~12.2.14",
+    "@angular/forms": "~12.2.14",
+    "@angular/platform-browser": "~12.2.14",
+    "@angular/platform-browser-dynamic": "~12.2.14",
+    "@angular/router": "~12.2.14",
+    "chart.js": "^3.6.2",
+    "chartjs-adapter-moment": "^1.0.0",
+    "chartjs-plugin-datalabels": "^2.0.0",
+    "moment": "^2.29.1",
+    "ng-tailwindcss": "^2.3.4",
+    "ng2-charts": "^3.0.2",
+    "ngx-csv-parser": "0.0.7",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.2.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^12.2.14",
+    "@angular/cli": "^12.2.14",
+    "@angular/compiler-cli": "^12.2.14",
+    "@types/jasmine": "~3.8.0",
+    "@types/node": "^12.11.1",
+    "jasmine-core": "~3.8.0",
+    "karma": "~6.3.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "tailwindcss": "^2.2.19",
+    "typescript": "~4.3.2"
+  }
+}

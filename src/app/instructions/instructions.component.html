@@ -1,0 +1,14 @@
+<div class="w-1/3 py-8 px-3">
+		<div class="font-sans font-light text-4xl tracking-tight mb-2">
+				Welcome to the Digital Delta<span class="font-bold"> Technical Assessment</span>
+		</div>
+		<div class="font-sans font-light text-xl tracking-tight mb-8">
+				Congratulations on advancing to this round of interviews.
+		</div>
+</div>
+
+<div class="w-full grid grid-cols-4 px-3 gap-12">
+		<app-instruction-step *ngFor="let instruction of instructions" [instruction]="instruction"></app-instruction-step>
+		
+</div>
+<div class="w-full text-center text-3xl"><nav><a routerLink="/content">My Response</a></nav></div>

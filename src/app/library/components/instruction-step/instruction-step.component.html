@@ -1,0 +1,21 @@
+<div class="mb-8">
+		<div class="font-sans font-bold text-lg tracking-tight">
+				{{instruction.title}}
+		</div>
+		<div class="font-sans font-norm text-sm tracking-tight">
+				<p *ngFor="let descr of instruction.descr; let l = last" [innerHTML]="descr" [ngClass]="{'mb-1.5':!l}"></p>
+		</div>
+
+		<div *ngIf="instruction.steps.length" class="font-sans font-norm text-sm tracking-tight my-4">
+				<div *ngFor="let step of instruction.steps; let i = index" class="mb-3 pb-3 pr-3 border-b border-gray-400" [ngClass]="{'border-t pt-3 mt-3': i === 0}">
+						<div class="flex font-bold">
+								<div class="w-8 h-full" *ngIf="step.numbered">{{i + 1}}</div>
+								<div class="flex-1 h-full">{{step.title}}</div>
+						</div>
+						<div [ngClass]="{'pl-8': step.numbered}">
+								<div class="w-full" [innerHTML]="step.descr"></div>
+								<app-instruction-step *ngFor="let subStep of step.steps" [instruction]="subStep"></app-instruction-step>
+						</div>
+				</div>
+		</div>
+</div>
